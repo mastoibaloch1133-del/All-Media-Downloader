@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b0b14">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Nazik Downloader">
+<title>Nazik Downloader — Save Videos from TikTok, YouTube &amp; More</title>
+<meta name="google-site-verification" content="Cp7En-USsLJPQQE21r7tekTa9-CQ9Ztwb2XNeCn3HLY" />
+<meta name="description" content="Nazik Downloader is a free online tool for saving public videos from TikTok, YouTube, Instagram and Facebook. Paste a link, pick a format and download.">
+<meta name="author" content="Ghullam Nazik Mastoi">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://nazik-downloader.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nazik Downloader">
+<meta property="og:title" content="Nazik Downloader — Save Videos from TikTok, YouTube &amp; More">
+<meta property="og:description" content="Nazik Downloader is a free online tool for saving public videos from TikTok, YouTube, Instagram and Facebook. Paste a link, pick a format and download.">
+<meta property="og:url" content="https://nazik-downloader.pages.dev/">
+<meta property="og:image" content="https://nazik-downloader.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nazik Downloader — Save Videos from TikTok, YouTube &amp; More">
+<meta name="twitter:description" content="Nazik Downloader is a free online tool for saving public videos from TikTok, YouTube, Instagram and Facebook. Paste a link, pick a format and download.">
+<meta name="twitter:image" content="https://nazik-downloader.pages.dev/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>try{var t=localStorage.getItem('nzk_theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<script type="application/ld+json">
+[
+ {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Nazik Downloader",
+  "url": "https://nazik-downloader.pages.dev/",
+  "description": "Nazik Downloader is a free online tool for saving public videos from TikTok, YouTube, Instagram and Facebook. Paste a link, pick a format and download.",
+  "inLanguage": "en",
+  "publisher": {
+   "@type": "Person",
+   "name": "Ghullam Nazik Mastoi"
+  }
+ },
+ {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+   {
+    "@type": "Question",
+    "name": "What is Nazik Downloader?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "It is a free web tool. You give it the link of a public video and it shows the files you can save, such as different qualities or an audio-only version. It does not host any videos itself."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Which sites does it work with?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "TikTok, YouTube, Instagram and Facebook each have their own page here. Links from some other popular video sites may also work. If the tool cannot read a link, it tells you."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Do I need an account or an app?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "No. Open the page in your browser, paste a link and download. There is nothing to install and nothing to sign up for."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Why can’t it read my link?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "The video is probably private, deleted, age-restricted or limited to certain regions, or the link was cut off. Copy it again from the Share menu and try once more."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "What happens to the links I paste?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "They are sent to a third-party processing service that looks up the media files. Your recent-downloads list stays in your own browser and you can clear it at any time. The Privacy Policy has the details."
+    }
+   },
+   {
+    "@type": "Question",
+    "name": "Can I download any video I like?",
+    "acceptedAnswer": {
+     "@type": "Answer",
+     "text": "Only content you own or have permission to save. Platform rules and copyright still apply to you. See the Terms page for more."
+    }
+   }
+  ]
+ }
+]
+</script>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand" role="link" tabindex="0" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+      <div class="brand-mark">ND</div>
+      <div class="brand-text">
+        <div class="brand-name">Nazik Downloader</div>
+        <div class="brand-tag">Free video saver</div>
+      </div>
+    </div>
+
+    <nav class="nav-links">
+      <a class="nav-link" href="#downloader" onclick="event.preventDefault();scrollToId('downloader')">Downloader</a>
+      <a class="nav-link" href="#platforms" onclick="event.preventDefault();scrollToId('platforms')">Platforms</a>
+      <a class="nav-link" href="#how" onclick="event.preventDefault();scrollToId('how')">How it works</a>
+      <a class="nav-link" href="#faq" onclick="event.preventDefault();scrollToId('faq')">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn theme-toggle" id="themeBtn" aria-label="Toggle theme" type="button">
+        <i class="bi bi-sun-fill icon-sun"></i>
+        <i class="bi bi-moon-stars-fill icon-moon"></i>
+      </button>
+      <button class="icon-btn mobile-menu-btn" id="menuBtn" aria-label="Menu" type="button">
+        <i class="bi bi-list" id="menuIcon"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#downloader" onclick="event.preventDefault();scrollToId('downloader')">Downloader <i class="bi bi-arrow-right"></i></a>
+  <a href="#platforms" onclick="event.preventDefault();scrollToId('platforms')">Platforms <i class="bi bi-arrow-right"></i></a>
+  <a href="#how" onclick="event.preventDefault();scrollToId('how')">How it works <i class="bi bi-arrow-right"></i></a>
+  <a href="#faq" onclick="event.preventDefault();scrollToId('faq')">FAQ <i class="bi bi-arrow-right"></i></a>
+  <a href="https://whatsapp.com/channel/0029VbDLdAz5K3zUnAgCuv2S" target="_blank" rel="noopener">WhatsApp Channel <i class="bi bi-box-arrow-up-right"></i></a>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Free online video saver
+      </div>
+      <h1>
+        Keep the videos you love,<br>
+        <span class="gradient">saved in a few taps</span>
+      </h1>
+      <p>
+        Nazik Downloader finds the downloadable files behind a public video link, so you can keep a copy on your phone or computer. It runs in any modern browser.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOADER ============ -->
+<section class="downloader-section" id="downloader">
+  <div class="container">
+    <div class="dl-card">
+      <div class="dl-label">
+        <i class="bi bi-link-45deg"></i>
+        Paste a video link
+      </div>
+
+      <form id="download-form" novalidate>
+        <div class="dl-input-group">
+          <div class="dl-input-wrap">
+            <i class="bi bi-link-45deg"></i>
+            <input
+              type="url"
+              inputmode="url"
+              aria-label="Video link"
+              id="media-url"
+              class="dl-input"
+              placeholder="Paste a TikTok, YouTube, Instagram or Facebook link"
+              autocomplete="off"
+              required
+            >
+          </div>
+          <button type="submit" id="main-download-btn" class="dl-btn">
+            <i class="bi bi-cloud-arrow-down-fill"></i>
+            <span class="btn-text">Download</span>
+          </button>
+        </div>
+      </form>
+
+      <div class="platforms">
+        <a class="platform-chip" href="/download-tiktok-video"><i class="bi bi-tiktok"></i> TikTok</a>
+        <a class="platform-chip" href="/download-youtube-video"><i class="bi bi-youtube"></i> YouTube</a>
+        <a class="platform-chip" href="/download-instagram-reels"><i class="bi bi-instagram"></i> Instagram</a>
+        <a class="platform-chip" href="/download-facebook-video"><i class="bi bi-facebook"></i> Facebook</a>
+      </div>
+
+      <div class="dl-hint">
+        <i class="bi bi-shield-check"></i>
+        No account needed · Works on phone and PC · Public videos only
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESULTS ============ -->
+<section class="results-section hidden" id="results-section"></section>
+
+<!-- ============ RECENT ============ -->
+<section class="recent-section hidden" id="recent-section"></section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">How it works</div>
+      <h2 class="section-title">Three steps from link to file</h2>
+      <p class="section-sub">No technical knowledge is needed.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Copy the link</h3>
+        <p>In the app or website, use Share and choose Copy link, or copy the page address from your browser.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Paste it above</h3>
+        <p>Paste the link into the box and press Download. The files that are available appear in a moment.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Choose and save</h3>
+        <p>Pick a quality or an audio-only file and it is saved straight to your device.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATFORMS ============ -->
+<section class="features" id="platforms">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Platforms</div>
+      <h2 class="section-title">Pick your platform</h2>
+      <p class="section-sub">Each platform has a page with its own steps, tips and answers.</p>
+    </div>
+
+    <div class="features-grid">
+      <a class="feature" href="/download-tiktok-video">
+        <div class="feature-icon"><i class="bi bi-tiktok"></i></div>
+        <h3>TikTok videos</h3>
+        <p>Short clips, plus their audio when TikTok provides it.</p>
+      </a>
+      <a class="feature" href="/download-youtube-video">
+        <div class="feature-icon"><i class="bi bi-youtube"></i></div>
+        <h3>YouTube videos</h3>
+        <p>Regular videos in the resolutions each video offers.</p>
+      </a>
+      <a class="feature" href="/download-instagram-reels">
+        <div class="feature-icon"><i class="bi bi-instagram"></i></div>
+        <h3>Instagram videos</h3>
+        <p>Public Reels and video posts.</p>
+      </a>
+      <a class="feature" href="/download-facebook-video">
+        <div class="feature-icon"><i class="bi bi-facebook"></i></div>
+        <h3>Facebook videos</h3>
+        <p>Public videos from Watch, Pages and posts.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="features" id="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Why use it</div>
+      <h2 class="section-title">Simple on purpose</h2>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon"><i class="bi bi-phone-fill"></i></div>
+        <h3>Nothing to install</h3>
+        <p>Runs in the browser on Android, iPhone, Windows and Mac.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="bi bi-list-check"></i></div>
+        <h3>A clear list of files</h3>
+        <p>You see each available quality and file type before you save anything.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="bi bi-person-slash"></i></div>
+        <h3>No account</h3>
+        <p>No sign-up and no login. Your recent downloads stay on your own device.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon"><i class="bi bi-gift-fill"></i></div>
+        <h3>Free to use</h3>
+        <p>There is no subscription. Please use it responsibly and respect creators.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-eyebrow">Questions</div>
+      <h2 class="section-title">Common questions</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary class="faq-q">What is Nazik Downloader?<i class="bi bi-chevron-down"></i></summary>
+        <div class="faq-a">It is a free web tool. You give it the link of a public video and it shows the files you can save, such as different qualities or an audio-only version. It does not host any videos itself.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Which sites does it work with?<i class="bi bi-chevron-down"></i></summary>
+        <div class="faq-a">TikTok, YouTube, Instagram and Facebook each have their own page here. Links from some other popular video sites may also work. If the tool cannot read a link, it tells you.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Do I need an account or an app?<i class="bi bi-chevron-down"></i></summary>
+        <div class="faq-a">No. Open the page in your browser, paste a link and download. There is nothing to install and nothing to sign up for.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Why can’t it read my link?<i class="bi bi-chevron-down"></i></summary>
+        <div class="faq-a">The video is probably private, deleted, age-restricted or limited to certain regions, or the link was cut off. Copy it again from the Share menu and try once more.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">What happens to the links I paste?<i class="bi bi-chevron-down"></i></summary>
+        <div class="faq-a">They are sent to a third-party processing service that looks up the media files. Your recent-downloads list stays in your own browser and you can clear it at any time. The Privacy Policy has the details.</div>
+      </details>
+      <details class="faq-item">
+        <summary class="faq-q">Can I download any video I like?<i class="bi bi-chevron-down"></i></summary>
+        <div class="faq-a">Only content you own or have permission to save. Platform rules and copyright still apply to you. See the Terms page for more.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="brand-mark">ND</div>
+        <p>Nazik Downloader is a free web tool for saving public videos from popular platforms. Nothing is hosted here; files are fetched when you ask.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Downloaders</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/download-tiktok-video">TikTok videos</a></li>
+          <li><a href="/download-youtube-video">YouTube videos</a></li>
+          <li><a href="/download-instagram-reels">Instagram videos</a></li>
+          <li><a href="/download-facebook-video">Facebook videos</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://whatsapp.com/channel/0029VbDLdAz5K3zUnAgCuv2S" target="_blank" rel="noopener">WhatsApp Channel</a></li>
+          <li><a href="mailto:mastoibaloch1133@gmail.com">Email Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms &amp; DMCA</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-dev">
+        Developed by <strong>Ghullam Nazik Mastoi</strong>
+      </div>
+      <div class="footer-copy">© <span id="year"></span> Nazik Downloader · All rights reserved</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ TOAST ============ -->
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="/app.js" defer></script>
+
+</body>
+</html>
